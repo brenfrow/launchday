@@ -16,6 +16,7 @@ gem 'sequel'
 
 # Test requirements
 gem 'rspec', :group => "test"
+gem 'debugger', :group => "test"
 gem 'rack-test', :require => "rack/test", :group => "test"
 
 # Padrino Stable Gem
