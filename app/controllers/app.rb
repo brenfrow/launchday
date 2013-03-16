@@ -1,8 +1,9 @@
 Launchday.controllers :app do
 
+  layout :application
+
   get :app, map: "/app/:id" do
-    brandon = "renfrow"
-    render 'app/index', locals: {model: brandon}
+    render 'app/index', locals: {id: params[:id]}
   end
 
 end
