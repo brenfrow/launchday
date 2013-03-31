@@ -75,6 +75,10 @@ GEM
     rspec-mocks (2.12.2)
     sass (3.2.5)
     sequel (3.44.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     sinatra (1.3.4)
       rack (~> 1.4)
       rack-protection (~> 1.3)
@@ -102,4 +106,5 @@ DEPENDENCIES
   rake
   rspec
   sequel
+  simplecov
   sinatra-flash

@@ -18,6 +18,7 @@ gem 'sequel'
 gem 'rspec', :group => "test"
 gem 'debugger', :group => "test"
 gem 'rack-test', :require => "rack/test", :group => "test"
+gem 'simplecov', :require => false, :group => :test
 
 # Padrino Stable Gem
 gem 'padrino', '0.10.7'

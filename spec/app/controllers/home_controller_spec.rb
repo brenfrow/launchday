@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe "AppController" do
+describe "HomeController" do
   it "runs" do
-    get "/app/1"
+    get ""
   end
 end

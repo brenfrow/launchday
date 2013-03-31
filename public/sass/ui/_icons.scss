@@ -25,7 +25,7 @@ i[class*=" icon-"] {
 
 @each $icon in $entypo-icons {
 	.#{nth($icon, 1)} {
-		&.icon-left a:before, &.icon-right a:after {
+		&.icon-left a:before, &.icon-right a:after, &.icon-only a:after {
 			content: "#{nth($icon, 2)}";
 			height: inherit;
 		}

@@ -6,6 +6,7 @@ spec_tasks.each do |folder|
   RSpec::Core::RakeTask.new("spec:#{folder}") do |t|
     t.pattern = "./spec/#{folder}/**/*_spec.rb"
     t.rspec_opts = %w(-fs --color)
+    t.fail_on_error = false
   end
 end
 

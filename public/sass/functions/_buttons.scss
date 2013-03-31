@@ -33,6 +33,12 @@
 		}
 	}
 
+	&.icon-only {
+		a {
+			padding: 0 $button-font-size*1.6 0 $button-font-size/1.5;
+		}
+	}
+
 	&.icon-right {
 		a {
 			padding-right: $button-height;
