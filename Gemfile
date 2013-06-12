@@ -13,6 +13,8 @@ gem 'compass'
 gem 'erubis', "~> 2.7.0"
 gem 'pg'
 gem 'sequel'
+gem 'sassy-math'
+gem 'modular-scale'
 
 # Test requirements
 gem 'rspec', :group => "test"

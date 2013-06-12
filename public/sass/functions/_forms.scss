@@ -1,10 +1,10 @@
 @mixin input-size($size) {
 	@if $size == xxwide { $size: 100%; }
-	@if $size == xwide { $size: 71%; }
-	@if $size == wide { $size: 46%; }
-	@if $size == normal { $size: 31%; }
-	@if $size == narrow { $size: 21%; }
-	@if $size == xnarrow { $size: 16%; }
+	@if $size == xwide { $size: 82.66667%; }
+	@if $size == wide { $size: 65.33333%; }
+	@if $size == normal { $size: 48%; }
+	@if $size == narrow { $size: 30.66667%; }
+	@if $size == xnarrow { $size: 13.33333%; }
 
 	$width: $size;
 

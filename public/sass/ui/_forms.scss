@@ -3,7 +3,7 @@
 @import "functions/forms";
 
 
-form { 
+form {
 	margin: 0 0 18px;
 	label {
 		display: block;
@@ -35,7 +35,7 @@ form {
 		}
 	}
 }
-	
+
 .field {
 	position: relative;
 	max-width: 100%;
@@ -109,7 +109,7 @@ form {
 
 	@include respond(portrait-tablets) {
 
-		
+
 		@include input-sizes-list() {
 			&:first-child {
 				margin-right: 3%;
@@ -273,7 +273,7 @@ form {
 			}
 		}
 	}
-	
+
 	.radio, & .checkbox {
 		@each $error in danger $danger-color, warning $warning-color, success $success-color {
 			&.#{nth($error, 1)} {
@@ -317,14 +317,14 @@ form {
 		left: -7px;
 	}
 }
-	
+
 .field .text input[type="search"] {
 	-webkit-appearance: textfield;
 }
-	
+
 
 /* Form Picker Element (<select>) */
-	
+
 .picker {
 	position: relative;
 	width: auto;

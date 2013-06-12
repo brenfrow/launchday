@@ -1,5 +1,8 @@
 Launchday.controllers :register do
+
+  layout :application
+
   get "/" do
-    "Register"
+   render 'register/index'
   end
 end
