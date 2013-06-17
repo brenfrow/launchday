@@ -17,10 +17,12 @@ gem 'sassy-math'
 gem 'modular-scale'
 
 # Test requirements
-gem 'rspec', :group => "test"
-gem 'debugger', :group => "test"
-gem 'rack-test', :require => "rack/test", :group => "test"
-gem 'simplecov', :require => false, :group => :test
+#group :test do
+  gem 'rspec'
+  gem 'debugger'
+  gem 'rack-test'
+  gem 'simplecov'
+#end
 
 # Padrino Stable Gem
 gem 'padrino', '0.10.7'

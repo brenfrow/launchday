@@ -4,7 +4,6 @@ class Launchday < Padrino::Application
   register Padrino::Helpers
   register CompassInitializer
 
-
   enable :sessions
 
   ##

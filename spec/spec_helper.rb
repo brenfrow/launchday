@@ -1,10 +1,10 @@
 PADRINO_ENV = 'test' unless defined?(PADRINO_ENV)
 require File.expand_path(File.dirname(__FILE__) + "/../config/boot")
-require 'simplecov'
+# require 'simplecov'
 
-SimpleCov.start do
-  add_filter "/bundle/"
-end
+# SimpleCov.start do
+#   add_filter "/bundle/"
+# end
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods

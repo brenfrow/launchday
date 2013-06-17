@@ -7,3 +7,6 @@ header h2 { float: left; margin-left: 20px; }
 .l-inline > * { display: inline-block; }
 
 .container { padding: 10px 20px; }
+
+form .field { text-align: right; }
+form .field .error { font-size: 12px; }

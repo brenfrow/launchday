@@ -1,15 +1,25 @@
 <div class="row">
-  <div class="seven columns centered">
+  <div class="four columns centered">
     <h2>Register</h2>
-    <form method="post" action="/register">
+    <% form_for(model, '/register', :method => 'post') do |form| %>
       <ul>
-        <li class="field"><input class="wide text input" type="text" placeholder="First Name" /></li>
-        <li class="field"><input class="wide text input" type="text" placeholder="Last Name" /></li>
-        <li class="field"><input class="wide text input" type="text" placeholder="Company Name (optional)" /></li>
-        <li class="field"><input class="wide password input" type="password" placeholder="Password input" /></li>
-        <li class="field"><input class="wide email input" type="email" placeholder="Email input" /></li>
+        <li class="field<%= ' warning' unless form.object.errors[:username].empty? %>">
+          <%= text_field_tag :username, class: "xx-wide text input", type: :text, placeholder: "User Name", autofocus: true, value: form.object.username %>
+          <%= error_message_on form.object, :username %>
+        </li>
+        <li class="field">
+          <%= text_field_tag :companyname, class: "xx-wide text input", type: :text, placeholder: "Company Name (optional)", value: form.object.companyname %>
+        </li>
+        <li class="field<%= ' warning' unless form.object.errors[:email].empty? %>">
+          <%= text_field_tag :email, class: "xx-wide email input", type: :text, placeholder: "Email", value: form.object.email %>
+          <%= error_message_on form.object, :email %>
+        </li>
+        <li class="field<%= ' warning' unless form.object.errors[:password].empty? %>">
+          <input class="xx-wide password input" name="password" type="password" placeholder="Password" />
+          <%= error_message_on form.object, :password %>
+        </li>
       </ul>
-    </form>
-    <div class="medium primary btn"><a href="#">Submit</a></div>
+      <div class="medium primary btn"><button type="submit">Submit</button></div>
+    <% end %>
   </div>
 </div>
