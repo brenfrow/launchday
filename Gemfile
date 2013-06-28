@@ -15,6 +15,10 @@ gem 'pg'
 gem 'sequel'
 gem 'sassy-math'
 gem 'modular-scale'
+gem 'phantomjs'
+gem 'screencap'
+gem 'json'
+gem 'uuidtools'
 
 # Test requirements
 #group :test do

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="four columns centered">
+    <h2>Submit an App</h2>
+    <% form_for(model, '/app/create', :method => 'post') do |form| %>
+      <ul>
+        <li class="field<%= ' warning' unless form.object.errors[:name].empty? %>">
+          <%= text_field_tag :name, class: "xx-wide text input", type: :text, placeholder: "Name", autofocus: true, value: form.object.name %>
+          <%= error_message_on form.object, :name %>
+        </li>
+        <li class="field<%= ' warning' unless form.object.errors[:webpage].empty? %>">
+          <%= text_field_tag :webpage, class: "xx-wide text input", type: :text, placeholder: "Web Page", autofocus: true, value: form.object.webpage %>
+          <%= error_message_on form.object, :webpage %>
+        </li>
+        <li class="field">
+          <%= text_area_tag :description, class: "xx-wide textarea input", rows: 4, type: :text, placeholder: "Description", value: form.object.description %>
+        </li>
+      </ul>
+      <div class="pretty medium primary btn"><button type="submit">Submit</button></div>
+    <% end %>
+  </div>
+</div>

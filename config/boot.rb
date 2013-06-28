@@ -6,7 +6,11 @@ PADRINO_ROOT = File.expand_path('../..', __FILE__) unless defined?(PADRINO_ROOT)
 require 'rubygems' unless defined?(Gem)
 require 'bundler'
 require 'bundler/setup'
+require 'screencap'
+require 'json'
+
 Bundler.require(:default, PADRINO_ENV)
+
 
 ##
 # ## Enable devel logging

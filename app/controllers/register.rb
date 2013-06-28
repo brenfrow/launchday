@@ -1,9 +1,11 @@
+require './app/helpers/screenshot'
+
 Launchday.controllers :register do
 
   layout :application
 
   get "/" do
-    render 'register/index', locals: { model: User.new}
+    render 'register/index', locals: { model: User.new }
   end
 
   post "/" do
@@ -15,5 +17,10 @@ Launchday.controllers :register do
     else
       render 'register/index', locals: { model: user }
     end
+  end
+
+  post "ajax/picture" do
+    content_type :json
+    {"src" => Screenshot.new.snap(params.fetch("src")) }.to_json
   end
 end

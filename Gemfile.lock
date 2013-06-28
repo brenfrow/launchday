@@ -4,6 +4,12 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     chunky_png (1.2.7)
     columnize (0.3.6)
     compass (0.12.2)
@@ -19,21 +25,29 @@ GEM
     debugger-ruby_core_source (1.2.0)
     diff-lcs (1.2.4)
     erubis (2.7.0)
+    eventmachine (1.0.3)
+    faye-websocket (0.4.7)
+      eventmachine (>= 0.12.0)
     fssm (0.2.10)
+    http_parser.rb (0.5.3)
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.6.1)
+    json (1.8.0)
     mail (2.3.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
+    mini_portile (0.5.0)
     modular-scale (1.0.6)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
       sassy-math (>= 1.5)
     multi_json (1.6.1)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     padrino (0.10.7)
       padrino-admin (= 0.10.7)
       padrino-cache (= 0.10.7)
@@ -62,6 +76,12 @@ GEM
       mail (~> 2.3.0)
       padrino-core (= 0.10.7)
     pg (0.14.1)
+    phantomjs (1.8.1.1)
+      poltergeist
+    poltergeist (1.3.0)
+      capybara (~> 2.1.0)
+      faye-websocket (>= 0.4.4, < 0.5.0)
+      http_parser.rb (~> 0.5.3)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-protection (1.3.2)
@@ -80,6 +100,7 @@ GEM
     sass (3.2.5)
     sassy-math (1.5)
       compass (~> 0.11)
+    screencap (0.0.3)
     sequel (3.44.0)
     simplecov (0.7.1)
       multi_json (~> 1.0)
@@ -98,6 +119,9 @@ GEM
       polyglot (>= 0.3.1)
     url_mount (0.2.1)
       rack
+    uuidtools (2.1.4)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -106,13 +130,17 @@ DEPENDENCIES
   compass
   debugger
   erubis (~> 2.7.0)
+  json
   modular-scale
   padrino (= 0.10.7)
   pg
+  phantomjs
   rack-test
   rake
   rspec
   sassy-math
+  screencap
   sequel
   simplecov
   sinatra-flash
+  uuidtools

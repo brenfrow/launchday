@@ -22,6 +22,7 @@ Sequel.migration do
       primary_key :id
       String   :name,         null: false
       Text     :description,  null: true
+      String   :webpage,      null: true
       Date     :launch_on,    null: true
       Integer  :rating_total, null: false, default: 0
       Integer  :rating_count, null: false, default: 0
