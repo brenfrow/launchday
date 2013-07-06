@@ -10,3 +10,5 @@ header h2 { float: left; margin-left: 20px; }
 
 form .field { text-align: right; }
 form .field .error { font-size: 12px; }
+
+.center { text-align: center; }

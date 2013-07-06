@@ -8,7 +8,7 @@
           <%= error_message_on form.object, :name %>
         </li>
         <li class="field<%= ' warning' unless form.object.errors[:webpage].empty? %>">
-          <%= text_field_tag :webpage, class: "xx-wide text input", type: :text, placeholder: "Web Page", autofocus: true, value: form.object.webpage %>
+          <%= text_field_tag :webpage, class: "xx-wide text input", id: "webpage", type: :text, placeholder: "Web Page", autofocus: true, value: form.object.webpage %>
           <%= error_message_on form.object, :webpage %>
         </li>
         <li class="field">

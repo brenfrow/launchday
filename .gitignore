@@ -9,3 +9,5 @@ vendor/gems/*
 bundle/*
 coverage
 logfile
+public/img/pages/*
+public/.sass-cache
